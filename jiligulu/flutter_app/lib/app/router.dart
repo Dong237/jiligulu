@@ -70,12 +70,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/child/dashboard',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '家人管理'),
+            const ChildDashboardPage(),
       ),
       GoRoute(
         path: '/child/setup',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '帮爸妈设置'),
+            const SetupWizardPage(),
       ),
       GoRoute(
         path: '/child/report',
@@ -87,7 +87,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/onboarding',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '欢迎来到叽里咕噜'),
+            const OnboardingPage(),
       ),
     ],
   );
