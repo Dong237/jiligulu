@@ -1,0 +1,11 @@
+{
+  "name": "叽里咕噜",
+  "short_name": "叽里咕噜",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F0EDE6",
+  "theme_color": "#1A8A7D",
+  "description": "AI英语学习伴侣",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false
+}
