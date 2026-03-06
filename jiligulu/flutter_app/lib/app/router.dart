@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../shared/widgets/elder_text.dart';
 import '../core/constants/app_colors.dart';
+import '../features/voice_chat/voice_chat_page.dart';
 import 'elder_shell.dart';
 
 /// App router configuration.
@@ -44,7 +45,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/voice-chat',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '语音对话'),
+            const VoiceChatPage(),
       ),
       GoRoute(
         path: '/summary',
