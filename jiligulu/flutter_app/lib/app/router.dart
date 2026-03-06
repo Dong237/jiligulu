@@ -3,7 +3,12 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import '../shared/widgets/elder_text.dart';
 import '../core/constants/app_colors.dart';
+import '../features/home/home_page.dart';
+import '../features/scenes/scene_list_page.dart';
+import '../features/pet/jiji_status_page.dart';
 import '../features/voice_chat/voice_chat_page.dart';
+import '../features/summary/session_summary_page.dart';
+import '../features/review/review_cards_page.dart';
 import 'elder_shell.dart';
 
 /// App router configuration.
@@ -21,21 +26,21 @@ final routerProvider = Provider<GoRouter>((ref) {
             GoRoute(
               path: '/',
               builder: (context, state) =>
-                  const _PlaceholderPage(title: '首页'),
+                  const HomePage(),
             ),
           ]),
           StatefulShellBranch(routes: [
             GoRoute(
               path: '/scenes',
               builder: (context, state) =>
-                  const _PlaceholderPage(title: '场景'),
+                  const SceneListPage(),
             ),
           ]),
           StatefulShellBranch(routes: [
             GoRoute(
               path: '/jiji',
               builder: (context, state) =>
-                  const _PlaceholderPage(title: '叽叽'),
+                  const JiJiStatusPage(),
             ),
           ]),
         ],
@@ -50,12 +55,12 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/summary',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '学习总结'),
+            const SessionSummaryPage(),
       ),
       GoRoute(
         path: '/review-cards',
         builder: (context, state) =>
-            const _PlaceholderPage(title: '复习卡片'),
+            const ReviewCardsPage(),
       ),
 
       // Child mode routes
