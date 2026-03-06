@@ -1,0 +1,38 @@
+name: jiligulu
+description: 叽里咕噜 - AI英语学习伴侣
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.0
+  riverpod_annotation: ^2.3.0
+  go_router: ^14.0.0
+  web_socket_channel: ^3.0.0
+  just_audio: ^0.9.0
+  record: ^5.1.0
+  hive: ^2.2.0
+  hive_flutter: ^1.1.0
+  json_annotation: ^4.9.0
+  uuid: ^4.0.0
+  qr_flutter: ^4.1.0
+  cached_network_image: ^3.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.0
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/
+    - assets/audio/
+    - assets/images/
