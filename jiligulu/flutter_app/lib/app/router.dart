@@ -9,6 +9,9 @@ import '../features/pet/jiji_status_page.dart';
 import '../features/voice_chat/voice_chat_page.dart';
 import '../features/summary/session_summary_page.dart';
 import '../features/review/review_cards_page.dart';
+import '../features/family/child_dashboard_page.dart';
+import '../features/family/setup_wizard_page.dart';
+import '../features/auth/onboarding_page.dart';
 import 'elder_shell.dart';
 
 /// App router configuration.
